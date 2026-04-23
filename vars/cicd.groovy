@@ -6,4 +6,4 @@ def buildartifact()
 {
   sh 'mvn package'
 }
-def deployment()
+
