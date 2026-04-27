@@ -8,6 +8,6 @@ def buildartifact()
 }
 def deployment(jobname,ip,context)
 {
-sh "scp -o StrictHostKeyChecking=no ${jobname}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat10/webapps/${context}"
+sh """scp -o StrictHostKeyChecking=no ${jobname}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat10/webapps/${context}"""
   }
 
